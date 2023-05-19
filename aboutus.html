@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.ico" />
+    <title>Rdemy | About Us</title>
+
+    <style>
+        body { height: 300vh;}
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        nav {height: 5rem; background-color: rgb(255, 255, 255);}
+        .aboutus { 
+            height:80vh;
+            background:url(./elearning1.jpg);
+             background-attachment: fixed;
+              display: flex;
+              align-items: center;
+              justify-content:center;
+              position: relative;
+              z-index: 1;
+            }
+
+        h1 
+        {
+            color: white;
+        }
+
+        .dark-cover
+        {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            filter: opacity(30%);
+            z-index: -1;
+        }
+        .bottom-style 
+        {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 102%;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    
+    <section class="aboutus">
+        <h1>About Us</h1>
+        <div class="dark-cover"></div>
+        <img class="bottom-style" src="./bottom style.svg" alt="">
+     
+    </section>
+</body>
+</html>

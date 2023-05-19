@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rdemy</title>
+  <link rel="icon" href="./logo.ico" />
+  <link rel="stylesheet" href="./owl_carosol/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./owl_carosol/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/9b92c8ffb3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- color palate -->
+  <input type="color" class="color-theme">
+
+  <!-- preloader -->
+  <div class="preloader"> 
+    <div class="loader">
+    </div>
+  </div>
+  <!-- navbar -->
+
+  <!-- top nav for desktop devices -->
+  <nav>
+    <div class="navbar-wraper">
+      <div class="navbar-brand">
+        <img src="./logo.svg" alt="" />
+        <h1>Rdemy</h1>
+      </div>
+      <div class="navbar-tabs">
+        <a class="tab" href="#">Home </a>
+        <a class="tab" href="aboutus.html">About us </a>
+        <a class="tab" href="#">Courses <i class="fa-solid fa-angle-right"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li>product 1</li>
+              <li>product 2</li>
+              <li>product 3</li>
+            </ul>
+          </div>
+        </a>
+        <a class="tab" href="#">Products <i class="fa-solid fa-angle-right"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li>product 1</li>
+              <li>product 2</li>
+              <li>product 3</li>
+              <li>
+                more <i class="fa-solid fa-angle-right"></i>
+                <ul class="child-options">
+                  <li>product 4</li>
+                  <li>product 5</li>
+                  <li>product 6</li>
+                  <li>
+                    more <i class="fa-solid fa-angle-right"></i>
+                    <ul class="child-options">
+                      <li>product 7</li>
+                      <li>product 8</li>
+                      <li>product 9</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </a>
+        <a class="tab" href="#">Blog <i class="fa-solid fa-angle-right"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li>product 1</li>
+              <li>product 2</li>
+              <li>product 3</li>
+            </ul>
+          </div>
+        </a>
+        <a class="tab" href="#">Contacts </a>
+        <a class="tab" href="#">Multipage <i class="fa-solid fa-angle-right"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li>product 1</li>
+              <li>product 2</li>
+              <li>product 3</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="navbar-utils">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-person-circle"></i>
+        <i class="bi bi-bag"></i>
+      </div>
+    </div>
+    <div class="navbar-toggle-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  <!-- side navbar for mobile devices -->
+  <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <div class="navbar-brand">
+        <img src="./logo.svg" alt="" />
+        <h1>Rdemy</h1>
+      </div>
+      <button type="button" class="fa-solid fa-xmark offcanvas-close-button" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcampus-body">
+      <div class="navbar-tabs">
+        <div class="tab"> <a href="#">Home</a></div>
+        <div class="tab"> <a href="#">About us</a> </div>
+        <div class="tab"> <a href="#">Corses</a><i class="fa-solid fa-angle-down"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab"> <a href="#">Products</a><i class="fa-solid fa-angle-down"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+              <li>
+                more <i class="fa-solid fa-angle-down"></i>
+                <ul class="child-options">
+                  <li><a href="#">product 1</a></li>
+                  <li><a href="#">product 1</a></li>
+                  <li><a href="#">product 1</a></li>
+                  <li>
+                    more <i class="fa-solid fa-angle-down"></i>
+                    <ul class="child-options">
+                      <li><a href="#">product 1</a></li>
+                      <li><a href="#">product 1</a></li>
+                      <li><a href="#">product 1</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab"> <a href="#">Blog</a><i class="fa-solid fa-angle-down"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab"> <a href="#">Contact</a> </div>
+        <div class="tab"> <a href="#">Multipage</a><i class="fa-solid fa-angle-down"></i>
+          <div class="navbar-dropdown">
+            <ul class="parent-options">
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+              <li><a href="#">product 1</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="navbar-utils">
+        <i class="bi bi-person-circle"></i>
+        <i class="bi bi-bag"></i>
+      </div>
+      <div class="searchbar">
+        <i class="bi bi-search"></i>
+        <input type="text" />
+      </div>
+    </div>
+  </div>
+
+  <!-- sections -->
+
+  <!--slider -->
+  <section class="page-one">
+    <div class="reigns-carousel" data-slide-time="5000">
+      <div class="slide">
+        <div class="content">
+          <h1>slide 1</h1>
+          <p>description</p>
+        </div>
+        <img src="./elearning1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>slide 2</h1>
+          <p>description</p>
+        </div>
+        <img src="./elearning2.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>slide 3</h1>
+          <p>description</p>
+        </div>
+        <img src="./elearning3.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>slide 4</h1>
+          <p>description</p>
+        </div>
+        <img src="./elearning2.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>slide 5</h1>
+          <p>description</p>
+        </div>
+        <img src="./elearning3.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>slide 6</h1>
+          <p>description</p>
+        </div>
+        <img src="./elearning2.jpg" alt="" />
+      </div>
+      <div class="action-bar"></div>
+    </div>
+    <!-- <img class="bottom-style" src="./bottom style.svg" alt=""> -->
+    <object class="bottom-style" id="bottom-style" type="image/svg+xml" data="./bottom style.svg"></object>
+  </section>
+
+  <!-- About Our School -->
+  <section class="page-two">
+    <div class="image-container">
+      <img src="./about-image.jpg" alt="" />
+    </div>
+    <div class="content">
+      <h3>About our School</h3>
+      <h1>Online Graduate School for Adults & Children</h1>
+      <p>
+        Sed risus augue, commodo ornare felis non, eleifend molestie metus.
+        Donec nec purus porttitor, ultrices diam id, laoreet mi. Aenean sit
+        amet enim quis massa pharetra eleifend.
+      </p>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Flexible training programs</li>
+        <li><i class="fa-solid fa-check"></i>Experienced teachers</li>
+        <li><i class="fa-solid fa-check"></i>Free incoming lessons</li>
+      </ul>
+      <div class="contact-parent">
+        <button>Read More<i class="fa-solid fa-right-long"></i></button>
+        <div class="contact">
+          <i class="fa-solid fa-phone"></i>
+          <p>9124352334</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Category || flip cards-->
+  <section class="page-three">
+
+    <div class="content">
+      <h3>Start now</h3>
+      <h1>Course Catergories</h1>
+      <div class="underline"></div>
+    </div>
+    <div class="grid-wrapper">
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="thecard">
+          <div class="thefront">
+            <i class="fa-solid fa-face-laugh"></i>
+            <h1>Arts & Design</h1>
+            <p>
+              7 programs
+            </p>
+          </div>
+
+          <div class="theback">
+            <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+            <h1>Arts & Design</h1>
+            <p>
+              Your use of this site is subject to the terms and conditions
+              governing this and all transactions.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- <div class="thecard">
+        <div class="thefront">
+          <i class="fa-solid fa-face-laugh"></i>
+          <h1>Business & Finance</h1>
+          <p>
+            10 programs
+          </p>
+        </div>
+
+        <div class="theback">
+          <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+          <h1>Arts & Design</h1>
+          <p>
+            Your use of this site is subject to the terms and conditions
+            governing this and all transactions.
+          </p>
+
+        </div>
+      </div>
+      <div class="thecard">
+        <div class="thefront">
+          <i class="fa-solid fa-face-laugh"></i>
+          <h1>Digital Marketing</h1>
+          <p>
+            9 programs
+          </p>
+        </div>
+
+        <div class="theback">
+          <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+          <h1>Arts & Design</h1>
+          <p>
+            Your use of this site is subject to the terms and conditions
+            governing this and all transactions.
+          </p>
+
+        </div>
+      </div>
+      <div class="thecard">
+        <div class="thefront">
+          <i class="fa-solid fa-face-laugh"></i>
+          <h1>Fitness & Yoga</h1>
+          <p>
+            7 programs
+          </p>
+        </div>
+
+        <div class="theback">
+          <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+          <h1>Arts & Design</h1>
+          <p>
+            Your use of this site is subject to the terms and conditions
+            governing this and all transactions.
+          </p>
+
+        </div>
+      </div>
+      <div class="thecard">
+        <div class="thefront">
+          <i class="fa-solid fa-face-laugh"></i>
+          <h1>It Development</h1>
+          <p>
+            7 programs
+          </p>
+        </div>
+
+        <div class="theback">
+          <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+          <h1>Arts & Design</h1>
+          <p>
+            Your use of this site is subject to the terms and conditions
+            governing this and all transactions.
+          </p>
+
+        </div>
+      </div>
+      <div class="thecard">
+        <div class="thefront">
+          <i class="fa-solid fa-face-laugh"></i>
+          <h1>languages</h1>
+          <p>
+            7 programs
+          </p>
+        </div>
+
+        <div class="theback">
+          <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+          <h1>Arts & Design</h1>
+          <p>
+            Your use of this site is subject to the terms and conditions
+            governing this and all transactions.
+          </p>
+
+        </div>
+      </div>
+      <div class="thecard">
+        <div class="thefront">
+          <i class="fa-solid fa-face-laugh"></i>
+          <h1>Photography</h1>
+          <p>
+            7 programs
+          </p>
+        </div>
+
+        <div class="theback">
+          <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+          <h1>Arts & Design</h1>
+          <p>
+            Your use of this site is subject to the terms and conditions
+            governing this and all transactions.
+          </p>
+
+        </div>
+      </div>
+      <div class="thecard">
+        <div class="thefront">
+          <i class="fa-solid fa-face-laugh"></i>
+          <h1>Health & Beauty</h1>
+          <p>
+            7 programs
+          </p>
+        </div>
+
+        <div class="theback">
+          <img src="./orfeas-green-G5A5ZNjS2tE-unsplash.jpg" alt="">
+          <h1>Arts & Design</h1>
+          <p>
+            Your use of this site is subject to the terms and conditions
+            governing this and all transactions.
+          </p>
+
+        </div>
+      </div> -->
+
+    </div>
+    <div class="ac">
+      <p>view all catagories<i class="fa-solid fa-right-long"></i></p>
+    </div>
+  </section>
+
+  <!-- Popular Courses || zoom in cards -->
+  <section class="page-four">
+    <div class="heading">
+      <h3>Learn Online</h3>
+      <h1>Popular Courses</h1>
+      <div class="underline"></div>
+    </div>
+    <div class="grid-wraper">
+      <div class="card">
+        <div class="image-container"><img src="./popular_course_card1.jpg" alt=""></div>
+        <div class="utils">
+          <p><i class="fa-solid fa-star"></i>4.5</p>
+          <p><i class="fa-solid fa-clock"></i>4 weeks</p>
+          <p><i class="fa-solid fa-user-group"></i></i>11 vacancy</p>
+        </div>
+        <div class="content">
+          <h1>Smart Interface Design</h1>
+          <p>Nunc laoreet, lectus et dapibus maximus, sapien ante tincidunt neque, a finibu euarcu.</p>
+        </div>
+        <div class="readmore">readmore <i class="fa-solid fa-right-long"></i> </div>
+      </div>
+      <div class="card">
+        <div class="image-container"><img src="./popular_course_card.jpg" alt=""></div>
+        <div class="utils">
+          <p><i class="fa-solid fa-star"></i>4.5</p>
+          <p><i class="fa-solid fa-clock"></i>4 weeks</p>
+          <p><i class="fa-solid fa-user-group"></i></i>11 vacancy</p>
+        </div>
+        <div class="content">
+          <h1>Advanced Mobile Interfaces</h1>
+          <p>Nunc laoreet, lectus et dapibus maximus, sapien ante tincidunt neque, a finibu euarcu.</p>
+        </div>
+        <div class="readmore">readmore <i class="fa-solid fa-right-long"></i> </div>
+      </div>
+      <div class="card">
+        <div class="image-container"><img src="./popular_course_card2.jpg" alt=""></div>
+        <div class="utils">
+          <p><i class="fa-solid fa-star"></i>4.5</p>
+          <p><i class="fa-solid fa-clock"></i>4 weeks</p>
+          <p><i class="fa-solid fa-user-group"></i></i>11 vacancy</p>
+        </div>
+        <div class="content">
+          <h1>Creating Fashion Make-up</h1>
+          <p>Nunc laoreet, lectus et dapibus maximus, sapien ante tincidunt neque, a finibu euarcu.</p>
+        </div>
+        <div class="readmore">readmore <i class="fa-solid fa-right-long"></i> </div>
+      </div>
+      <div class="card">
+        <div class="image-container"><img src="./popular_course_card3.jpg" alt=""></div>
+
+        <div class="utils">
+          <p><i class="fa-solid fa-star"></i>4.5</p>
+          <p><i class="fa-solid fa-clock"></i>4 weeks</p>
+          <p><i class="fa-solid fa-user-group"></i></i>11 vacancy</p>
+        </div>
+        <div class="content">
+          <h1>SMobile Photography</h1>
+          <p>Nunc laoreet, lectus et dapibus maximus, sapien ante tincidunt neque, a finibu euarcu.</p>
+        </div>
+        <div class="readmore">readmore <i class="fa-solid fa-right-long"></i> </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Count Up Cards -->
+  <section class="page-five">
+    <div class="heading">
+      <h1>Online Graduate School for <span> Adults & Children </span>. Suspendisse metus elit, iaculis eu fermentum
+        eget, viverra eu lectus. Integer commodo a libero.</h1>
+    </div>
+    <div class="grid-wraper">
+      <div class="count-card" data-count-value="90">
+        <h1><span class="count">90</span></h1>
+        <p>professional Courses</p>
+      </div>
+      <div class="count-card" data-count-value="80">
+        <h1><span class="count">80</span></h1>
+        <p>professional Courses</p>
+      </div>
+      <div class="count-card" data-count-value="55">
+        <h1><span class="count">55</span></h1>
+        <p>professional Courses</p>
+      </div>
+      <div class="count-card" data-count-value="108">
+        <h1><span class="count">108</span></h1>
+        <p>professional Courses</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign Up for a trial class || form with that girl :) -->
+  <section class="page-six">
+
+    <div class="left">
+      <img src="./world-map.png" alt="">
+      <h1>Sign up for a
+        Free Trial Lesson
+        by Zoom</h1>
+      <p>Quisque commodo, magna nec accu
+        msan euismod, tellus mi ornare
+        enim, quis congue elit.</p>
+      <button>Read More <i class="fa-solid fa-right-long"></i> </button>
+    </div>
+    <div class="right">
+      <img src="./form-girl.png" alt="" class="girl-image">
+
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Email">
+      <div class="select-courses">
+        <select name="courses" id="courses">
+          <option value="" disabled selected>Select your option</option>
+          <option value="course 1">course 1</option>
+          <option value="course 2">course 2</option>
+          <option value="course 3">course 3</option>
+          <option value="course 4">course 4</option>
+        </select>
+      </div>
+      <button>Send Request</button>
+    </div>
+  </section>
+
+  <!-- Meet Out Teachers -->
+  <section class="page-seven">
+
+    <div class="heading">
+      <h3>Our Team</h3>
+      <h1>Meet Our Teachers</h1>
+      <div class="underline"></div>
+      <p>Duis dictum massa nunc, at tristique elit consequat et. Mauris sed magna at urna tempor ultrices. Pellentesque
+        sit amet odio a leo facilisis ultricies. Pellentesque mollis efficitur quam eu laoreet.</p>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="teachers-card item">
+        <img src="./teacher1.jpg" alt="">
+        <h1>Henia Welch</h1>
+        <p>Business Coach</p>
+      </div>
+      <div class="teachers-card item">
+        <img src="./teacher2.jpg" alt="">
+        <h1>Henia Welch</h1>
+        <p>Business Coach</p>
+      </div>
+      <div class="teachers-card item">
+        <img src="./teacher3.jpg" alt="">
+        <h1>Henia Welch</h1>
+        <p>Business Coach</p>
+      </div>
+      <div class="teachers-card item">
+        <img src="./teacher4.jpg" alt="">
+        <h1>Henia Welch</h1>
+        <p>Business Coach</p>
+      </div>
+      <div class="teachers-card item">
+        <img src="./teacher5.jpg" alt="">
+        <h1>Henia Welch</h1>
+        <p>Business Coach</p>
+      </div>
+      <div class="teachers-card item">
+        <img src="./teacher6.jpg" alt="">
+        <h1>Henia Welch</h1>
+        <p>Business Coach</p>
+      </div>
+    </div>
+    <div class="button-parent">
+      <button>Read More<i class="fa-solid fa-right-long"></i></button>
+    </div>
+  </section>
+
+  <!-- testimonials -->
+  <section class="page-eight">
+    <div class="heading">
+      <p>Testimonials</p>
+      <h1>What our students say
+        about courses</h1>
+    </div>
+    <div class="grid-wrapper">
+      <div class="owl-carousel owl-theme">
+        <div class="testimonials-card item">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Morbi.</p>
+          <img src="./teacher1.jpg" alt="">
+          <h5>Cassie Carleton</h5>
+        </div>
+        <div class="testimonials-card item">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Morbi.</p>
+          <img src="./teacher1.jpg" alt="">
+          <h5>Cassie Carleton</h5>
+        </div>
+        <div class="testimonials-card item">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Morbi.</p>
+          <img src="./teacher1.jpg" alt="">
+          <h5>Cassie Carleton</h5>
+        </div>
+        <div class="testimonials-card item">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Morbi.</p>
+          <img src="./teacher1.jpg" alt="">
+          <h5>Cassie Carleton</h5>
+        </div>
+        <div class="testimonials-card item">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Morbi.</p>
+          <img src="./teacher1.jpg" alt="">
+          <h5>Cassie Carleton</h5>
+        </div>
+        <div class="testimonials-card item">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Morbi.</p>
+          <img src="./teacher1.jpg" alt="">
+          <h5>Cassie Carleton</h5>
+        </div>
+        <div class="testimonials-card item">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue
+            placerat fringilla a id lacus. Morbi.</p>
+          <img src="./teacher1.jpg" alt="">
+          <h5>Cassie Carleton</h5>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-nine">
+    <div class="left">
+      <h4>Online store</h4>
+      <h1> <span> How to upgrade </span> your skills without leaving home. Bestseller 2021</h1>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque efficitur
+        velit porttitor odio iaculis, nec egestas felis dignissim.</p>
+
+      <h3>
+        <span> Download the digital book </span><br>
+        to your smartphone:
+      </h3>
+
+      <div class="link-images">
+        <img src="./app-apple-2x.png" alt="">
+        <img src="./app-google-2x.png" alt="">
+      </div>
+    </div>
+    <div class="right">
+      <img src="./book.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="page-ten">
+    <img src="./world-map.png" alt="">
+    <i class="fa-solid fa-bell"></i>
+    <h1> <span>Subscribe</span><br>to our newsletter</h1>
+    <div class="subcribe-field">
+      <input type="text" placeholder="Your email ..">
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+  <section class="page-eleven">
+    <img
+      src="https://thumbs.dreamstime.com/b/hand-laptop-banner-finger-computer-internet-technology-concept-business-web-connection-mixed-media-220777814.jpg"
+      alt="">
+
+    <div class="heading">
+      <p>Join our school</p>
+      <h1>Ready to start learning? Sign up now!</h1>
+    </div>
+
+    <div class="button-parent">
+      <button>Read More<i class="fa-solid fa-right-long"></i></button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="left">
+      <div class="brand">
+      <img src="./logo.svg" alt="">
+      <h1>Rdemy</h1>
+    </div>
+      <p>Mauris sed molestie sem. Sed vel vestibulum
+        elit, non accumsan risus. In vitae sapien viverra
+        est.</p>
+        <div class="holder">
+          <i class="fa-solid fa-phone"></i>
+          <h2>0 (550) 680-34-12<br><span>Round-the-clock</span></h2>
+        
+        </div>
+
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+
+      
+    </div>
+    <div class="middle">
+      <h1>Explore</h1>
+      <div class="underline"></div>
+
+      <div class="sub">
+        <div class="sub-left">
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+        </div>
+        <div class="sub-right">
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+          <h2><i class="fa-solid fa-angle-right"></i>Edication</h2>
+      </div>
+      </div>
+    </div>
+    <div class="right">
+      <h1>Galleries</h1>
+      <div class="underline"></div>
+
+
+      <div class="grid-w">
+        <img src="./portfolio-04-110x110.jpg" alt="">
+        <img src="./portfolio-04-110x110.jpg" alt="">
+        <img src="./portfolio-04-110x110.jpg" alt="">
+        <img src="./portfolio-04-110x110.jpg" alt="">
+        <img src="./portfolio-04-110x110.jpg" alt="">
+        <img src="./portfolio-04-110x110.jpg" alt="">
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./owl_carosol/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
